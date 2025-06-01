@@ -201,16 +201,9 @@ footer nav ul {
 }
 
 
-/*MODALE RAJOUT*/
+/* MODALE 1*/
 
-h3 {
-  font-size: 20px;
-  margin-bottom: 25px;
-}
-
-
-
-.modale-photo {
+.modale-photo1 {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -224,6 +217,68 @@ h3 {
 	/*display: none;*/
 }
 
+
+.photo-gallerie {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: -10px;
+  margin: 20px 0;
+  padding: 0 20px;
+  display: flex;
+}
+
+
+
+.gallerie-item img {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin-left: 45px;
+}
+
+.delete-icon {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  background: #000000 ;
+  color: white;
+  padding: 6px;
+  font-size: 0.9em;
+}
+
+
+
+/******  MODALE 2  ********/
+
+h3 {
+  font-size: 26px;
+  margin-bottom: 25px;
+  margin-top: 30px;
+}
+
+.fond-encart i {
+    font-size: 60px;
+    color: #B9C5CC;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+
+
+.modale-photo2 {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1000;
+	display: none;*/
+}
+
 .modale-content {
 	background: white;
 	padding: 2em;
@@ -233,39 +288,59 @@ h3 {
 	text-align: center;
 }
 
+.fleche-retour {
+	position: absolute;
+	left: 25px;
+	cursor: pointer;
+	font-size: 20px;
+	color: #000000;
+}
+
 
 .close-btn {
 	position: absolute;
 	top: 15px;
 	right: 25px;
 	cursor: pointer;
-	font-size: 2em;
+	font-size: 30px;
+	color : #000000;
 }
+
 
 .fond-encart {
 	background: #e8f0f4;
-	padding: 1em;
+	padding: 0.8em;
 	margin: auto; 
 	border-radius: 4px;
 	width: 70%;
 }
 
+.fond-encart p {
+  font-size: 10px;
+  margin-top: 0;
+}
+
 .fond-encart button {
-	border-radius: 10%;
+	background-color: #CBD6DC;
 	display: flex;
+	padding: 8px 20px;
+	width: 40%;
+    border-radius: 20px;
+	border: none;
 	margin: auto;
-	margin-top: 20px;
-	margin-bottom: 15px;
-	color:#357ABD ;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color:#306685 ;
 }
 
 
 
-/*titre & catégorie*/
+/*MODALE 2 : titre & catégorie*/
 
 #ajoutphoto {
 	width: 50%;
 	margin-left: 50px;
+	margin-top: 0px;
 }
 
 
@@ -290,23 +365,33 @@ h3 {
 	display: flex;
 }
 
+
+
 #ajoutphoto select {
   width : 150%;
   height: 45px;
   font-size: 1.2em;
   border: none;
   box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
-  margin-top: 10px;
 }
 
+/* Bouton Valider*/
 
-.section input[type="submit"]{
+.btnValider input {
 	font-family: 'Syne';
 	font-weight: 700;
 	color: white;
-	background-color: #1D6154;
+	background-color: #A7A7A7;
+	border: none; 
+	padding : 8px 20px;
 	margin : 2em auto ;
 	width: 180px;
 	text-align: center;
-	border-radius: 60px ;
+	border-radius: 80px ;
+	margin-top: 15px;
+}
+
+.btnValider hr {
+	color: #B3B3B3 ;
+	width : 75%;
 }
