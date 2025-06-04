@@ -105,139 +105,102 @@
 </main>
 
 
-<!-- MODALE 1 -->
+<!-- MODALE -->
 
-<div class="modale-photo1">
-	<div class="modale-content">
+<!-- MODALE UNIQUE AVEC DEUX ARTICLES -->
+<div class="modale-photo">
+  <div class="modale-content">
+
+    <!-- ARTICLE 1 : Galerie photo -->
+    <article id="Galerie-section">
+		    <span class="fleche-retour"><i class="fa-solid fa-arrow-left"></i></span>
+    		<span class="close-btn">&times;</span>
+      <h3 id="titlemodal"> Galerie photo </h3>
+
+      <section class="photo-gallerie"> 
+        <div class="gallerie-item">
+          <img src="assets/images/abajour-tahina.png" alt="Photo galerie">
+          <span class="delete-icon"><i class="fa-solid fa-trash-can"></i></span>
+        </div>
+        <div class="gallerie-item">
+          <img src="assets/images/appartement-paris-v.png" alt="Photo galerie">
+          <span class="delete-icon"><i class="fa-solid fa-trash-can"></i></span>
+        </div>
+        <div class="gallerie-item">
+          <img src="assets/images/restaurant-sushisen-londres.png" alt="Photo galerie">
+          <span class="delete-icon"><i class="fa-solid fa-trash-can"></i></span>
+        </div>
+        <div class="gallerie-item">
+          <img src="assets/images/la-balisiere.png" alt="Photo galerie">
+          <span class="delete-icon"><i class="fa-solid fa-trash-can"></i></span>
+        </div>
+        <div class="gallerie-item">
+          <img src="assets/images/structures-thermopolis.png" alt="Photo galerie">
+          <span class="delete-icon"><i class="fa-solid fa-trash-can"></i></span>
+        </div>
+        <div class="gallerie-item">
+          <img src="assets/images/appartement-paris-x.png" alt="Photo galerie">
+          <span class="delete-icon"><i class="fa-solid fa-trash-can"></i></span>
+        </div>
+        <div class="gallerie-item">
+          <img src="assets/images/villa-ferneze.png" alt="Photo galerie">
+          <span class="delete-icon"><i class="fa-solid fa-trash-can"></i></span>
+        </div>
+        <div class="gallerie-item">
+          <img src="assets/images/appartement-paris-xviii.png" alt="Photo galerie">
+          <span class="delete-icon"><i class="fa-solid fa-trash-can"></i></span>
+        </div>
+        <div class="gallerie-item">
+          <img src="assets/images/le-coteau-cassis.png" alt="Photo galerie">
+          <span class="delete-icon"><i class="fa-solid fa-trash-can"></i></span>
+        </div>
+        <div class="gallerie-item">
+          <img src="assets/images/bar-lullaby-paris.png" alt="Photo galerie">
+          <span class="delete-icon"><i class="fa-solid fa-trash-can"></i></span>
+        </div>
+      </section>
+
+      <div class="btnVert">
+        <hr>
+        <input type="submit" value="Ajouter une photo">
+      </div>
+    </article>
+
+    <!-- ARTICLE 2 : Formulaire d'ajout -->
+    <article id="AjoutPhoto-section"> 
 		<span class="fleche-retour"><i class="fa-solid fa-arrow-left"></i></span>
-		<span class="close-btn">&times;</span>
-		<h3 id="titlemodal"> Galerie photo </h3>
-		
-		<section class="photo-gallerie"> 
- 			<div class="gallerie-item">
-    			<img src="assets/images/abajour-tahina.png" alt="Photo galerie">
-    			<span class="delete-icon"><i class="fa-solid fa-trash-can"></i></span>
-  			</div>
-  			<div class="gallerie-item">
-    			<img src="assets/images/appartement-paris-v.png" alt="Photo galerie">
-    			<span class="delete-icon"><i class="fa-solid fa-trash-can"></i></span>
-  			</div>
-  			<div class="gallerie-item">
-    			<img src="assets/images/restaurant-sushisen-londres.png" alt="Photo galerie">
-    			<span class="delete-icon"><i class="fa-solid fa-trash-can"></i></span>
-  			</div>
-  			<div class="gallerie-item">
-    			<img src="assets/images/la-balisiere.png" alt="Photo galerie">
-    			<span class="delete-icon"><i class="fa-solid fa-trash-can"></i></span>
-  			</div>
-  				<div class="gallerie-item">
-    			<img src="assets/images/structures-thermopolis.png" alt="Photo galerie">
-    			<span class="delete-icon"><i class="fa-solid fa-trash-can"></i></span>
-  			</div>
+    	<span class="close-btn">&times;</span>
+      <h3 id="titlemodal"> Ajout photo </h3>
 
-  	<!-- 2eme ligne d’images -->
-  			<div class="gallerie-item">
-    			<img src="assets/images/appartement-paris-x.png" alt="Photo galerie">
-    			<span class="delete-icon"><i class="fa-solid fa-trash-can"></i></span>
-  			</div>
-  			<div class="gallerie-item">
-    			<img src="assets/images/villa-ferneze.png" alt="Photo galerie">
-    			<span class="delete-icon"><i class="fa-solid fa-trash-can"></i></span>
-  			</div>
-  			<div class="gallerie-item">
-    			<img src="assets/images/appartement-paris-xviii.png" alt="Photo galerie">
-    			<span class="delete-icon"><i class="fa-solid fa-trash-can"></i></span>
-  			</div>
-  			<div class="gallerie-item">
-    			<img src="assets/images/le-coteau-cassis.png" alt="Photo galerie">
-    			<span class="delete-icon"><i class="fa-solid fa-trash-can"></i></span>
-  			</div>
-  			<div class="gallerie-item">
-    			<img src="assets/images/bar-lullaby-paris.png" alt="Photo galerie">
-    			<span class="delete-icon"><i class="fa-solid fa-trash-can"></i></span>
-  			</div>
-		</section>
-			
-			<div class="btnVert">
-				<hr>
-				<input type="submit" value="Ajouter une photo">
-			</div>			
-		</form>
-	</div>
-</div> 
+      <form id="modaleForm">
+        <div class="fond-encart">
+          <i class="fa-regular fa-image"></i>
+          <button type="button">+ Ajouter photo</button>
+          <p>jpg, png : 4mo max</p>
+        </div>
 
+        <section id="ajoutphoto">
+          <label for="title">Titre</label>
+          <input type="text" name="title" id="title">
 
-<!-- MODALE 2-->
-<!-- <aside id="modal1" class="modal" aria-hidden="true" role="form" aria-labelledby="titlemodal"></aside>-->
-<div class="modale-photo2">
-	<div class="modale-content">
-		<span class="fleche-retour"><i class="fa-solid fa-arrow-left"></i></span>
-		<span class="close-btn">&times;</span>
-		<h3 id="titlemodal"> Ajout photo </h3>
-		
-		<form id="modaleForm">
-			<div class="fond-encart">
-				<i class="fa-regular fa-image"></i>
-				<button type="button">+ Ajouter photo</button>
-				<p>jpg, png : 4mo max</p>
-			</div>
-			
-		<section id="ajoutphoto">
-			<form action="#" method="post">
-  				<label for="title">Titre</label>
-  				<input type="text" name="title" id="title">
-			</form>
-			<form>
-  				<label for="category">Catégorie</label>
-  					<select name="category" id="category">
-    					<option value=""></option>
-    					<option value="1">trouver dans l'API</option>
-    					<option value="2">trouver dans l'API</option>
-					</select>
-  			</form>
-		</section>
-			<div class="btnValider">
-				<hr>
-				<input type="submit" value="Valider">
-			</div>			
-		</form>
-	</div>
+          <label for="category">Catégorie</label>
+          <select name="category" id="category">
+            <option value=""></option>
+            <option value="1">trouver dans l'API</option>
+            <option value="2">trouver dans l'API</option>
+          </select>
+        </section>
+
+        <div class="btnValider">
+          <hr>
+          <input type="submit" value="Valider">
+        </div>
+      </form>
+    </article>
+
+  </div>
 </div>
 
-<!-- MODALE 3-->
-<!-- <aside id="modal1" class="modal" aria-hidden="true" role="form" aria-labelledby="titlemodal"></aside>-->
-<div class="modale-photo3">
-	<div class="modale-content">
-		<span class="fleche-retour"><i class="fa-solid fa-arrow-left"></i></span>
-		<span class="close-btn">&times;</span>
-		<h3 id="titlemodal"> Ajout photo </h3>
-		
-			<form id="modaleForm">
-			<div class="fond-encart">
-				<img src="assets/images/villa-ferneze.png" alt="Photo galerie">
-			</div>
-			
-		<section id="ajoutphoto">
-			<form action="#" method="post">
-  				<label for="title">Titre</label>
-  				<input type="text" name="title" id="title">
-			</form>
-			<form>
-  				<label for="category">Catégorie</label>
-  					<select name="category" id="category">
-    					<option value=""></option>
-    					<option value="1">trouver dans l'API</option>
-    					<option value="2">trouver dans l'API</option>
-					</select>
-  			</form>
-		</section>
-			<div class="btnVert">
-				<hr>
-				<input type="submit" value="Valider">
-			</div>			
-		</form>
-	</div>
-</div>
 
 
 <footer>
