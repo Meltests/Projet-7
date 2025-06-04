@@ -52,7 +52,60 @@ body {
 	margin:auto;
 	font-family: 'Work Sans' ;
 	font-size: 14px;
+	background-color:#FFFEF8 ;
 }
+
+
+
+/** BANNERS mode édition + banner bas**/
+
+.banner-top {
+    background-color: black;
+	color : white;
+    width: 110%;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: "Work Sans";
+	 position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    width: 100vw;
+	/*display: none;*/
+}
+
+
+.banner-top i {
+    width: 18px;
+    height: 18px;
+}
+
+
+.banner-bas {
+    background-color: white;
+    width: 1440px;
+	height: 60px;
+    display: flex;
+    gap: 10px;
+	position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    width: 100vw;
+}
+
+.banner-bas li {
+	margin-right: 20%;
+}
+
+/****/
+
+
 header {
 	display: flex;
 	justify-content: space-between;
@@ -93,11 +146,23 @@ nav ul {
 nav li {
 	padding: 0 10px;
 	font-size: 1.2em;
+	
 }
 
 li:hover {
 	color: #B1663C;
 }
+
+nav li a {
+	text-decoration: none; 
+	color: black;       
+}
+
+li a:hover {
+	color: #B1663C;
+}
+
+
 #introduction {
 	display: flex;
 	align-items: center;
@@ -139,7 +204,7 @@ li:hover {
 }
 #contact {
 	width: 50%;
-margin: auto;
+	margin: auto;
 }
 #contact > * {
 	text-align: center;
@@ -214,36 +279,64 @@ footer nav ul {
 	align-items: center;
 	justify-content: center;
 	z-index: 1000;
-	/*display: none;*/
+	display: none;*/
 }
 
 
 .photo-gallerie {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  gap: -10px;
-  margin: 20px 0;
-  padding: 0 20px;
   display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 0 20px;
 }
 
-
+.gallerie-item {
+  position: relative;
+  flex: 17%; 
+}
 
 .gallerie-item img {
-  width: 50%;
-  height: auto;
+  width: 90%;
+  height: 100%;
   display: block;
-  margin-left: 45px;
+  margin: auto; 
 }
 
 .delete-icon {
   position: absolute;
   top: 6px;
-  right: 6px;
-  background: #000000 ;
+  right: 0px;
+  margin-right: 12px;
+  background: #000000;
   color: white;
-  padding: 6px;
-  font-size: 0.9em;
+  padding: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 10px;
+ }
+
+.delete-icon i {
+  font-size: 10px;
+}
+
+
+.btnVert input {
+	font-family: 'Syne';
+	font-weight: 700;
+	color: white;
+	background-color: #1D6154;
+	border: none; 
+	padding : 8px 20px;
+	margin : 2em auto ;
+	width: 180px;
+	text-align: center;
+	border-radius: 80px ;
+	margin-top: 15px;
+}
+
+.btnVert hr {
+	color: #B3B3B3 ;
+	width : 75%;
 }
 
 
@@ -276,7 +369,7 @@ h3 {
 	align-items: center;
 	justify-content: center;
 	z-index: 1000;
-	display: none;*/
+	display:none;*/ 
 }
 
 .modale-content {
@@ -312,7 +405,8 @@ h3 {
 	padding: 0.8em;
 	margin: auto; 
 	border-radius: 4px;
-	width: 70%;
+	width: 72%;
+	height: 140px;
 }
 
 .fond-encart p {
@@ -394,4 +488,25 @@ h3 {
 .btnValider hr {
 	color: #B3B3B3 ;
 	width : 75%;
+}
+
+
+/***** MODALE 3 *******/ 
+
+.modale-photo3 {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1000;
+	display: none;*/
+}
+
+.fond-encart img {
+	height: 108%;
 }
