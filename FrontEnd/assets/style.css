@@ -57,7 +57,7 @@ body {
 
 
 
-/** BANNERS mode édition + banner bas**/
+/** BANNERS mode éditionn + banner bas**/
 
 .banner-top {
     background-color: black;
@@ -149,11 +149,11 @@ h2{
 .mode-edition {
   align-items: center;
   gap: 0.5em;
-  font-size: 0.9em;
   color: #000000; 
   font-size: 15px;
   margin-bottom: 25px;
   margin-left: 10px;
+  text-decoration: none;
   /*display: none;*/
 }
 
@@ -315,7 +315,7 @@ footer nav ul {
 	align-items: center;
 	justify-content: center;
 	z-index: 1000;
-	/*display: none;*/
+	display: none;*/
 }
 
 .modale1-wrapper {
