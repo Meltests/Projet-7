@@ -75,7 +75,7 @@ body {
     margin-left: -50vw;
     margin-right: -50vw;
     width: 100vw;
-	/*display: none;*/
+	display: none;*/
 }
 
 
@@ -137,6 +137,28 @@ h2{
 	font-size: 30px;
 	color: #1D6154
 }
+
+
+.titre-edition {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em; /* espace entre le titre et "Mode édition" */
+}
+
+.mode-edition {
+  align-items: center;
+  gap: 0.5em;
+  font-size: 0.9em;
+  color: #000000; 
+  font-size: 15px;
+  margin-bottom: 25px;
+  margin-left: 10px;
+  /*display: none;*/
+}
+
+
+
 nav ul {
 	display: flex;
 	align-items: center;
@@ -160,6 +182,19 @@ nav li a {
 
 li a:hover {
 	color: #B1663C;
+}
+
+
+#login {
+	/*display : none;*/
+}
+
+#logout {
+	display: none;*/
+}
+
+#login-gras {
+  font-weight: bold;
 }
 
 
@@ -266,39 +301,43 @@ footer nav ul {
 }
 
 
-/* MODALE */
+/* Modale */
 
-.modale-photo {
+
+.modale {
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 	background: rgba(0, 0, 0, 0.5);
-	display: flex;
+	display: flex; /* Important pour que align-items et justify-content fonctionnent */
 	align-items: center;
 	justify-content: center;
 	z-index: 1000;
-	
+	/*display: none;*/
 }
 
-#Galerie-section {
-display: none;*/
-}
-
-#AjoutPhoto-section {
-/*display: none;*/
-}
-
-
-.modale-content {
+.modale1-wrapper {
 	background: white;
-	padding: 2em;
-	border-radius: 10px;
 	width: 25%;
+	min-width: 300px;
+	padding: 20px;
+	border-radius: 10px;
 	position: relative;
 	text-align: center;
+	overflow: auto;
 }
+
+.modale-partie-1 { /*1er article de la modale*/
+  /*display: none;*/
+}
+
+.modale-partie-2 { /*2eme article de la modale*/
+  /*display: none;*/
+}
+
+/***Première partie de la modale***/
 
 
 .photo-gallerie {
@@ -423,7 +462,7 @@ h3 {
 
 
 
-/*MODALE 2 : titre & catégorie*/
+/*2me partie de la modale*/
 
 #ajoutphoto {
 	width: 50%;

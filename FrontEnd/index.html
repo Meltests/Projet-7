@@ -23,7 +23,12 @@
 		<ul>
 			<li>projets</li>
 			<li>contact</li>
-			<li><a href="login.html"> login </a></li>
+			<li id="login">
+    			<a href="login.html">Login</a>
+			</li>
+			<li id="logout">
+    			<a href="login.html">Logout</a>
+  			</li>
 			<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
 		</ul>
 	</nav>
@@ -41,7 +46,14 @@
 		</article>
 	</section>
 	<section id="portfolio">
-		<h2>Mes Projets</h2>
+		<div class="titre-edition">
+  			<h2>Mes Projets</h2>
+  				 <a href="#modale1" class="mode-edition">
+    				<i class="fas fa-pen-to-square"></i>
+    				<span>modifier</span>
+  				</a>
+		</div>
+
 		<div class="gallery">
 			<figure>
 				<img src="assets/images/abajour-tahina.png" alt="Abajour Tahina">
@@ -102,104 +114,104 @@
 			<input type="submit" value="Envoyer">
 		</form>
 	</section>
-</main>
+
 
 
 <!-- MODALE -->
 
-<!-- MODALE UNIQUE AVEC DEUX ARTICLES -->
-<div class="modale-photo">
-  <div class="modale-content">
-
-    <!-- ARTICLE 1 : Galerie photo -->
-    <article id="Galerie-section">
-		    <span class="fleche-retour"><i class="fa-solid fa-arrow-left"></i></span>
-    		<span class="close-btn">&times;</span>
-      <h3 id="titlemodal"> Galerie photo </h3>
-
-      <section class="photo-gallerie"> 
-        <div class="gallerie-item">
-          <img src="assets/images/abajour-tahina.png" alt="Photo galerie">
-          <span class="delete-icon"><i class="fa-solid fa-trash-can"></i></span>
-        </div>
-        <div class="gallerie-item">
-          <img src="assets/images/appartement-paris-v.png" alt="Photo galerie">
-          <span class="delete-icon"><i class="fa-solid fa-trash-can"></i></span>
-        </div>
-        <div class="gallerie-item">
-          <img src="assets/images/restaurant-sushisen-londres.png" alt="Photo galerie">
-          <span class="delete-icon"><i class="fa-solid fa-trash-can"></i></span>
-        </div>
-        <div class="gallerie-item">
-          <img src="assets/images/la-balisiere.png" alt="Photo galerie">
-          <span class="delete-icon"><i class="fa-solid fa-trash-can"></i></span>
-        </div>
-        <div class="gallerie-item">
-          <img src="assets/images/structures-thermopolis.png" alt="Photo galerie">
-          <span class="delete-icon"><i class="fa-solid fa-trash-can"></i></span>
-        </div>
-        <div class="gallerie-item">
-          <img src="assets/images/appartement-paris-x.png" alt="Photo galerie">
-          <span class="delete-icon"><i class="fa-solid fa-trash-can"></i></span>
-        </div>
-        <div class="gallerie-item">
-          <img src="assets/images/villa-ferneze.png" alt="Photo galerie">
-          <span class="delete-icon"><i class="fa-solid fa-trash-can"></i></span>
-        </div>
-        <div class="gallerie-item">
-          <img src="assets/images/appartement-paris-xviii.png" alt="Photo galerie">
-          <span class="delete-icon"><i class="fa-solid fa-trash-can"></i></span>
-        </div>
-        <div class="gallerie-item">
-          <img src="assets/images/le-coteau-cassis.png" alt="Photo galerie">
-          <span class="delete-icon"><i class="fa-solid fa-trash-can"></i></span>
-        </div>
-        <div class="gallerie-item">
-          <img src="assets/images/bar-lullaby-paris.png" alt="Photo galerie">
-          <span class="delete-icon"><i class="fa-solid fa-trash-can"></i></span>
-        </div>
-      </section>
-
-      <div class="btnVert">
-        <hr>
-        <input type="submit" value="Ajouter une photo">
-      </div>
-    </article>
-
-    <!-- ARTICLE 2 : Formulaire d'ajout -->
-    <article id="AjoutPhoto-section"> 
+<aside id="modale1" class="modale" aria-hidden="true" role="Galeriephoto" aria-modale="false" aria-labelledby="Galeriephoto">
+	<div class="modale1-wrapper">
 		<span class="fleche-retour"><i class="fa-solid fa-arrow-left"></i></span>
     	<span class="close-btn">&times;</span>
-      <h3 id="titlemodal"> Ajout photo </h3>
+			<section>
+     		 <!-- Premier affichage -->
+      			<article class="modale-partie-1">
+        			<h3 id="titlemodal"> Galerie photo </h3>
+        				<section class="photo-gallerie"> 
+       						<div class="gallerie-item">
+          						<img src="assets/images/abajour-tahina.png" alt="Photo galerie">
+          						<span class="delete-icon"><i class="fa-solid fa-trash-can"></i></span>
+        					</div>
+        					<div class="gallerie-item">
+          						<img src="assets/images/appartement-paris-v.png" alt="Photo galerie">
+          						<span class="delete-icon"><i class="fa-solid fa-trash-can"></i></span>
+        					</div>
+        					<div class="gallerie-item">
+          						<img src="assets/images/restaurant-sushisen-londres.png" alt="Photo galerie">
+          						<span class="delete-icon"><i class="fa-solid fa-trash-can"></i></span>
+        					</div>
+        					<div class="gallerie-item">
+          						<img src="assets/images/la-balisiere.png" alt="Photo galerie">
+          						<span class="delete-icon"><i class="fa-solid fa-trash-can"></i></span>
+        					</div>
+        					<div class="gallerie-item">
+          						<img src="assets/images/structures-thermopolis.png" alt="Photo galerie">
+          						<span class="delete-icon"><i class="fa-solid fa-trash-can"></i></span>
+        					</div>
+        					<div class="gallerie-item">
+          						<img src="assets/images/appartement-paris-x.png" alt="Photo galerie">
+          						<span class="delete-icon"><i class="fa-solid fa-trash-can"></i></span>
+        					</div>
+        					<div class="gallerie-item">
+          						<img src="assets/images/villa-ferneze.png" alt="Photo galerie">
+          						<span class="delete-icon"><i class="fa-solid fa-trash-can"></i></span>
+        					</div>
+        					<div class="gallerie-item">
+          						<img src="assets/images/appartement-paris-xviii.png" alt="Photo galerie">
+          						<span class="delete-icon"><i class="fa-solid fa-trash-can"></i></span>
+        					</div>
+        					<div class="gallerie-item">
+          						<img src="assets/images/le-coteau-cassis.png" alt="Photo galerie">
+          						<span class="delete-icon"><i class="fa-solid fa-trash-can"></i></span>
+        					</div>
+        					<div class="gallerie-item">
+          						<img src="assets/images/bar-lullaby-paris.png" alt="Photo galerie">
+          						<span class="delete-icon"><i class="fa-solid fa-trash-can"></i></span>
+        					</div>
+      					</section>
 
-      <form id="modaleForm">
-        <div class="fond-encart">
-          <i class="fa-regular fa-image"></i>
-          <button type="button">+ Ajouter photo</button>
-          <p>jpg, png : 4mo max</p>
-        </div>
+      				<div class="btnVert">
+        				<hr>
+        				<input type="submit" value="Ajouter une photo">
+      				</div>
+      			</article>
 
-        <section id="ajoutphoto">
-          <label for="title">Titre</label>
-          <input type="text" name="title" id="title">
+     		 <!-- Deuxième affichage -->
+      			<article class="modale-partie-2">
+        			<h3 id="titlemodal"> Ajout photo </h3>
+        				<form id="modaleForm">
+       						<div class="fond-encart">
+          						<i class="fa-regular fa-image"></i>
+          						<button type="button">+ Ajouter photo</button>
+          						<p>jpg, png : 4mo max</p>
+        					</div>
 
-          <label for="category">Catégorie</label>
-          <select name="category" id="category">
-            <option value=""></option>
-            <option value="1">trouver dans l'API</option>
-            <option value="2">trouver dans l'API</option>
-          </select>
-        </section>
+        					<section id="ajoutphoto">
+          						<label for="title">Titre</label>
+          						<input type="text" name="title" id="title">
 
-        <div class="btnValider">
-          <hr>
-          <input type="submit" value="Valider">
-        </div>
-      </form>
-    </article>
+          						<label for="category">Catégorie</label>
+          						<select name="category" id="category">
+            						<option value=""></option>
+            						<option value="1">trouver dans l'API</option>
+            						<option value="2">trouver dans l'API</option>
+          						</select>
+        					</section>
 
-  </div>
-</div>
+       						<div class="btnValider">
+          						<hr>
+          						<input type="submit" value="Valider">
+        					</div>
+      					</form>
+      			</article>
+    		</section>
+	</div>
+</aside>
+
+
+</main>
+
+
 
 
 
